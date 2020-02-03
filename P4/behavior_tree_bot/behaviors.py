@@ -69,8 +69,11 @@ def occupy_nearest_neutral_planet(state):
     strongest_planet = max(state.my_planets(), key=lambda p: p.num_ships, default=None)
 
     # (3) Find nearest neutral planet.
-    base_x = strongest_planet.x
-    base_y = strongest_planet.y
+    if strongest_planet:
+        base_x = strongest_planet.x
+        base_y = strongest_planet.y
+    else:
+        return False
 
     nearest_neutral = None
     distance = inf
@@ -90,5 +93,5 @@ def occupy_nearest_neutral_planet(state):
         return False
     else:
         # (4) Send enough ships to capture and occupy the planet.
-        occupying_ships = max(strongest_planet.num_ships / 2, neutral_planet.num_ships + 10)
-        return issue_order(state, strongest_planet.ID, weakest_planet.ID, occupying_ships)
+        occupying_ships = max(strongest_planet.num_ships / 2, nearest_neutral.num_ships + 10)
+        return issue_order(state, strongest_planet.ID, nearest_neutral.ID, occupying_ships)

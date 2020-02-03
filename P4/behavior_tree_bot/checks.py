@@ -6,6 +6,11 @@ def if_neutral_planet_available(state):
 def low_planets_check(state):
     return len(state.my_planets()) <= 5
 
+def have_most_planets(state):
+    return len(state.my_planets()) > len(state.enemy_planets())
+
+def have_least_planets(state):
+    return len(state.my_planets()) < len(state.enemy_planets())
 
 def have_largest_fleet(state):
     return sum(planet.num_ships for planet in state.my_planets()) \
