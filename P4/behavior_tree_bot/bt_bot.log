@@ -1,0 +1,2229 @@
+INFO:root:Setting Up Behavior Tree
+INFO:root:Setting Up Behavior Tree
+INFO:root:Root Defined
+INFO:root:Offensive - Defensive Check Defined
+INFO:root:Occupation Strategy Defined
+INFO:root:Offensive Strategy Defined
+INFO:root:Spread Sequence Defined
+INFO:root:Defensive Strategy Defined
+INFO:root:Children Assigned
+INFO:root:
+Selector: High Level Ordering of Strategies
+| Sequence: Offensive Tactics
+| | Check: have_most_planets
+| | Sequence: Early Occupation of Neutrals
+| | | Check: low_planets_check
+| | | Action: occupy_nearest_neutral_planet
+| | Sequence: Offensive Strategy
+| | | Check: have_largest_fleet
+| | | Action: attack_weakest_enemy_planet
+| | Sequence: Spread Strategy
+| | | Check: if_neutral_planet_available
+| | | Action: spread_to_weakest_neutral_planet
+| Sequence: Defensive Tactics
+| | Check: have_least_planets
+| | Sequence: Early Occupation of Neutrals
+| | | Check: low_planets_check
+| | | Action: occupy_nearest_neutral_planet
+| | Sequence: Defensive Strategy
+| | | Check: have_smallest_fleet
+| | | Action: reinforce_weakest_planet
+| | Sequence: Spread Strategy
+| | | Check: if_neutral_planet_available
+| | | Action: spread_to_weakest_neutral_planet
+| Action: occupy_nearest_neutral_planet
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:1 4 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 14.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 19.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 24.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 29.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 34.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 39.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 44.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 49.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 54.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 54.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 59.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 59.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 64.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 64.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 69.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 69.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 74.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 74.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 79.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 79.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 84.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 84.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 89.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 89.0 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:1 7 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Failure
+DEBUG:root:Result: Sequence: Defensive Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:4 18 21.5
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:4 18 14.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Failure
+DEBUG:root:Result: Sequence: Defensive Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 31.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 31.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 36.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 36.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 41.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 41.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 46.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 46.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 51.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 51.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 56.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 56.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 61.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 61.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 66.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 66.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 71.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 71.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 76.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 76.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 81.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 81.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 86.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 86.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 91.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 91.0 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:1 10 94.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Order:4 1 21.666666666666668
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Success
+DEBUG:root:Result: Sequence: Defensive Strategy -> Success
+DEBUG:root:Executing:Sequence: Spread Strategy
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
+DEBUG:root:Order:18 6 27.0
+DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Spread Strategy -> Success
+DEBUG:root:Result: Sequence: Defensive Tactics -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:7 67.0 69.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:7 67.0 69.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:7 15 69.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Order:4 7 21.666666666666668
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Success
+DEBUG:root:Result: Sequence: Defensive Strategy -> Success
+DEBUG:root:Executing:Sequence: Spread Strategy
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
+DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Spread Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:1 21 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Failure
+DEBUG:root:Result: Sequence: Defensive Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:4 21 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Failure
+DEBUG:root:Result: Sequence: Defensive Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:15 59.0 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:15 62.0 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:15 65.0 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:15 22 68.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 75.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 75.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:21 81.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:21 81.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 85.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Bad order:1 90.0 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:1 3 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:21 3 91.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Order:7 21 29.333333333333332
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Success
+DEBUG:root:Result: Sequence: Defensive Strategy -> Success
+DEBUG:root:Executing:Sequence: Spread Strategy
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
+DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Spread Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:7 8 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Failure
+DEBUG:root:Result: Sequence: Defensive Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Order:3 8 93.0
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Success
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Success
+DEBUG:root:Executing:Sequence: Defensive Strategy
+DEBUG:root:Executing:Check: have_smallest_fleet
+DEBUG:root:Result: Check: have_smallest_fleet -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_planet
+DEBUG:root:Order:3 7 25.333333333333332
+DEBUG:root:Result: Action: reinforce_weakest_planet -> Success
+DEBUG:root:Result: Sequence: Defensive Strategy -> Success
+DEBUG:root:Executing:Sequence: Spread Strategy
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
+DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Spread Strategy -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Sequence: Early Occupation of Neutrals -> Failure
+DEBUG:root:Result: Sequence: Defensive Tactics -> Failure
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+DEBUG:root:Result: Action: occupy_nearest_neutral_planet -> Failure
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Tactics
+DEBUG:root:Executing:Check: have_most_planets
+DEBUG:root:Result: Check: have_most_planets -> Failure
+DEBUG:root:Result: Sequence: Offensive Tactics -> Failure
+DEBUG:root:Executing:Sequence: Defensive Tactics
+DEBUG:root:Executing:Check: have_least_planets
+DEBUG:root:Result: Check: have_least_planets -> Success
+DEBUG:root:Executing:Sequence: Early Occupation of Neutrals
+DEBUG:root:Executing:Check: low_planets_check
+DEBUG:root:Result: Check: low_planets_check -> Success
+DEBUG:root:Executing:Action: occupy_nearest_neutral_planet
+INFO:root:Occupying Nearest Neutral Planet.
+ERROR:root:Error in bot.
+Traceback (most recent call last):
+  File "behavior_tree_bot/bt_bot.py", line 83, in <module>
+    do_turn(planet_wars)
+  File "behavior_tree_bot/bt_bot.py", line 70, in do_turn
+    behavior_tree.execute(planet_wars)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 52, in execute
+    success = child_node.execute(state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 63, in execute
+    continue_execution = child_node.execute(state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 63, in execute
+    continue_execution = child_node.execute(state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/bt_nodes.py", line 89, in execute
+    return self.action_function(state)
+  File "/Users/caseyfields/Desktop/UCSC/cmpm/cmpm146/P4/behavior_tree_bot/behaviors.py", line 72, in occupy_nearest_neutral_planet
+    base_x = strongest_planet.x
+AttributeError: 'NoneType' object has no attribute 'x'
